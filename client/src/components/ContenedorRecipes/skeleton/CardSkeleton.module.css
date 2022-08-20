@@ -1,0 +1,58 @@
+.contenedor_skeleton{
+  display: flex;
+  flex-wrap: wrap;
+  width: 73%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+  margin-top: 36px;
+}
+.card_skeleton{
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px 0px #0000005e;
+  background-color: white;
+  border-radius: 4px 4px 0px 0px;
+  transition: all 0.3s;
+  position: relative;
+  width: 312px;
+  height: 425px;
+}
+.imagen_skeleton{
+  background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+  40%, #e5e5e5 48%);
+  border-radius: 4px 4px 0px 0px;
+  width: 312px;
+  height: 231px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load89234 1s infinite;
+}
+.titulo_skeleton{
+  background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 40%, #e5e5e5 48%);
+  height: 60px;
+  width: 95%;
+  margin: 12px auto;
+  border-radius: 10px;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load89234 1s infinite;
+}
+.diet_skeleton{
+  background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 40%, #e5e5e5 48%);
+  height: 20px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load89234 1s infinite;
+}
+@keyframes load89234 {
+  100% {
+    background-position: -100% 0;
+  }
+}

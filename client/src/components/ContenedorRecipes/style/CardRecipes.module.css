@@ -1,0 +1,81 @@
+.contenedor_recipes{
+  display: flex;
+  flex-wrap: wrap;
+  width: 73%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+.card_recipe{
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px 0px #0000005e;
+  background-color: white;
+  border-radius: 4px 4px 0px 0px;
+  transition: all 0.3s;
+  position: relative;
+  width: 312px;
+  height: 425px;
+}
+.card_recipe:hover{
+  transform: scale(1.02);
+}
+.h_score{
+  position: absolute;
+  background-color: #ffffffc2;
+  display: flex;
+  top: 8px;
+  left: 256px;
+  border-radius: 5px;
+  padding: 2px;
+  font-weight: 700;
+  flex-direction: column;
+  transition: all 0.2s;
+  z-index: 3;
+}
+.card_recipe:hover .h_score{
+  opacity: 0;
+}
+.ico_score{
+  height: 45px;
+}
+
+.contenedor_image_recipe{
+  cursor: pointer;
+  border-radius: 4px 4px 0px 0px;
+  height: 231px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.card_info{
+  display: flex;
+  height: 170px;
+  margin: 10px auto;
+  width: 280px;
+  flex-direction: column;
+}
+.title_recipe{
+  overflow: overlay;
+  font-size: 25px;
+  font-weight: 100;
+  height: 70px;
+}
+.title_recipe::-webkit-scrollbar{
+  display: none;
+}
+.diets_recipe{
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  height: 90px;
+  flex-wrap: wrap;
+  overflow: overlay;
+}
+.diets_recipe::-webkit-scrollbar{
+  display: none;
+}
+.p_list{
+  text-align: left;
+  font-size: 15px;
+  margin: 0 4px 4px 0px;
+}

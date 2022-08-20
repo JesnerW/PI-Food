@@ -1,0 +1,105 @@
+*{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/* sistema filtro*/
+.nav_center{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.f_diet{
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  flex-direction: column;
+}
+.f_alf{
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  flex-direction: column;
+}
+.f_h_score{
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  flex-direction: column;;
+}
+.f_name{
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  flex-direction: column;;
+}
+
+/* nombre de todos los filtros */
+label{
+  color: white;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+/* estilo para los option select*/
+select{
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  font-size: 17px;
+  width: 140px;
+  transition: all 0.3s;
+  border-color: white;
+  border-radius: 2px;
+}
+select:focus-visible {
+  outline: 0px;
+}
+option{
+  font-size: 18px;
+  height: 20px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+}
+select:hover{
+  box-shadow: 0px 0px 15px -2px #fff;
+}
+
+/* option selector and input text*/
+.div_input_search{
+  display: flex;
+  align-items: center;
+}
+.input_search{
+  width: 180px;
+  font-size: 18px;
+  margin: 6px;
+  padding: 5px;
+  transition: all 0.3s;
+  color: black;
+  border: 1px solid white;
+}
+.input_search:hover{
+  box-shadow: 0px 0px 15px -2px #fff;
+}
+.input_search:focus-visible {
+  outline: 0px;
+}
+
+.ico{
+  height: 24px;
+  cursor: pointer;
+}
+.ico:hover{
+  cursor: pointer;
+}
+.ico_search{
+  cursor: pointer;
+  height: 36px;
+  width: 29px;
+  margin: 0 0 0 -50px;
+  padding: 0px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
