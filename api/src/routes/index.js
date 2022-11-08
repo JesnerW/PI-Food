@@ -5,7 +5,7 @@ const Recipe = require('./Recipe.js');
 
 const router = Router();
 
-router.get('/', (req,res)=>{
+router.get('/', (req, res) => {
   res.send("todo ok");
 })
 router.use('/diets', Diets);

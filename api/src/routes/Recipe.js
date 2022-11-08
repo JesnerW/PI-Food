@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
 
   var recetas = Recipe.findAll({ include: Diets })
     .then(dato => JSON.parse(JSON.stringify(dato, null, 2)));
-  var byName = fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&number=50&addRecipeInformation=true`)
+  var byName = fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&number=80&addRecipeInformation=true`)
     .then(x => x.json()).then(x => x.results)
 
   Promise.all([byName, recetas])
@@ -83,7 +83,7 @@ router.get('/:idReceta', (req, res) => {
           sourceName: dato.sourceName
         }
         res.status(200).json(newValue)
-      }else{
+      } else {
         let dato = x[1].value
         dato.diets = dato.diets.map(diet => diet.apodo)
         res.status(200).json(dato)
