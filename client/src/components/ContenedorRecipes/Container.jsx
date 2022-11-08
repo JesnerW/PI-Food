@@ -15,7 +15,7 @@ function Container() {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [recipesPerPage] = useState(9);
+  const [recipesPerPage] = useState(12);
   const [filter, setFilter] = useState({ diet: "all", order: "all", text: "" });
   // redux
   const dispatch = useDispatch();
